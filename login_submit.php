@@ -30,7 +30,7 @@ while($row = mysqli_fetch_array($result)){
 
 if ($found == 1){
     /* $_SESSION["username"] = $username; */
-    header("location: selectForm.php");
+    header("location: seller.php");
 }
 else{
     header("location: register.php");
