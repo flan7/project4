@@ -20,10 +20,11 @@ echo $sql;
 
 if ($conn->query($sql) === TRUE) {
   echo "added";
+  $conn->close();
+  header("location: ./showTable.php");
 } else {
   echo "Error adding: " . $conn->error;
 }
-
 $conn->close();
-header("location: ./showTable.php");
+
 ?>
