@@ -11,6 +11,7 @@
           <h1>Add item</h1>
           <label>Property Address:</label><input type="text" name="item" required>
           <label>price:</label><input type="text" name="price" required>
+          <label>seller username:</label><input type="text" name="seller" required>
           <button type="submit" name="add">Add</button>
         </form>
     </div>
