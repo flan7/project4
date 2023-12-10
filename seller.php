@@ -9,7 +9,7 @@
     <div class="form-container">
         <form method="post" action="seller_submit.php">
           <h1>Add item</h1>
-          <label>item:</label><input type="text" name="item" required>
+          <label>Property Address:</label><input type="text" name="item" required>
           <label>price:</label><input type="text" name="price" required>
           <button type="submit" name="add">Add</button>
         </form>
