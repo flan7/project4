@@ -14,7 +14,7 @@ else{
     echo "connected";
 }
 
-$sql = "INSERT INTO Music (artist, album) VALUES (\"".$_POST["artist"]."\", \"".$_POST["album"]."\")";
+$sql = "INSERT INTO Properties (address, price, seller) VALUES (\"".$_POST["address"]."\", \"".$_POST["price"]."\", \"".$_POST["seller"]."\")";
 
 echo $sql; 
 

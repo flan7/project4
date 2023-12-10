@@ -14,8 +14,8 @@
       <label>Username</label><input type="text" name="username" required>
       <label>Password</label><input type="password" name="password" required>
       <label>email</label><input type="text" name="email" required>
-      <label>Buyer</label><input type="radio" name="buyer" value="buyer" checked required>
-      <label>Seller</label><input type="radio" name="seller" value="seller" checked required>
+      <label>Buyer</label><input type="radio" name="type" value="buyer" required checked >
+      <label>Seller</label><input type="radio" name="type" value="seller" required>
       <button type="submit">Register</button>
     </form>
 

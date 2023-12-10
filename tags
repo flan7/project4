@@ -56,7 +56,7 @@
 !_TAG_ROLE_DESCRIPTION!HTML!stylesheet	extFile	/referenced as external files/
 .form-container	styles.css	/^  .form-container, .table-container {$/;"	c
 .table-container	styles.css	/^  .form-container, .table-container {$/;"	c
-Innovative Innovations	index.html	/^  <title>Innovative Innovations<\/title>$/;"	j
+DreamProperty	index.html	/^  <title>DreamProperty<\/title>$/;"	j
 body	styles.css	/^body {$/;"	s
 button	styles.css	/^  button {$/;"	s
 button	styles.css	/^  input, button {$/;"	s
@@ -74,7 +74,6 @@ dbname	showTable.php	/^$dbname = "ssalomon1";$/;"	v
 dbpassword	login_submit.php	/^$dbpassword = "ssalomon1";$/;"	v
 dbusername	login_submit.php	/^$dbusername = "ssalomon1";$/;"	v
 form	styles.css	/^  form {$/;"	s
-found	login_submit.php	/^$found = 0;$/;"	v
 input	styles.css	/^  input, button {$/;"	s
 label	styles.css	/^  label {$/;"	s
 password	createTables.php	/^$password = "ssalomon1";$/;"	v
@@ -84,10 +83,13 @@ password	seller_submit.php	/^$password = "ssalomon1";$/;"	v
 password	showTable.php	/^$password = "ssalomon1";$/;"	v
 project4	README.md	/^# project4$/;"	c
 query	login_submit.php	/^$query = "SELECT * FROM users";$/;"	v
-query	showTable.php	/^$query = "SELECT * FROM Music";$/;"	v
+query	register_submit.php	/^$query = "SELECT * FROM users WHERE username=\\"".$_POST["username"]."\\"";$/;"	v
+query	showTable.php	/^$query = "SELECT * FROM Properties";$/;"	v
 result	login_submit.php	/^$result = mysqli_query($conn, $query);$/;"	v
+result	register_submit.php	/^$result = mysqli_query($conn, $query);$/;"	v
 result	showTable.php	/^$result = mysqli_query($conn, $query);$/;"	v
 row	login_submit.php	/^while($row = mysqli_fetch_array($result)){$/;"	v
+row	register_submit.php	/^$row = mysqli_fetch_array($result);$/;"	v
 row	showTable.php	/^while($row = mysqli_fetch_array($result)){$/;"	v
 servername	createTables.php	/^$servername = "localhost";$/;"	v
 servername	login_submit.php	/^$servername = "localhost";$/;"	v
@@ -96,8 +98,7 @@ servername	seller_submit.php	/^$servername = "localhost";$/;"	v
 servername	showTable.php	/^$servername = "localhost";$/;"	v
 sql	createTables.php	/^$sql = "CREATE TABLE Music ($/;"	v
 sql	register_submit.php	/^$sql = "INSERT INTO users (username, password, email, type) VALUES (\\"".$_POST["username"]."\\"/;"	v
-sql	register_submit.php	/^$sql = "SELECT * FROM users WHERE username=\\"".$_POST["username"]."\\")";$/;"	v
-sql	seller_submit.php	/^$sql = "INSERT INTO Music (artist, album) VALUES (\\"".$_POST["artist"]."\\", \\"".$_POST["album/;"	v
+sql	seller_submit.php	/^$sql = "INSERT INTO Properties (address, price, seller) VALUES (\\"".$_POST["address"]."\\", \\"/;"	v
 table	styles.css	/^  table {$/;"	s
 table	styles.css	/^  table, th, td {$/;"	s
 td	styles.css	/^  table, th, td {$/;"	s

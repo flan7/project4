@@ -18,11 +18,11 @@ else{
 
 $query = "SELECT * FROM users";
 $result = mysqli_query($conn, $query);
-$found = 0;
 
 while($row = mysqli_fetch_array($result)){
 
     if($row['username']==$username && $row['password']==$password){
+        echo "found";
         if ($row['type']=="seller"){
             header("location: seller.php");
         }
@@ -32,7 +32,8 @@ while($row = mysqli_fetch_array($result)){
         else if ($row['type']=="admin"){
             header("location: admin.php");
         }
+        
+    }
 }
-header("location: register.php");
 
 ?>
