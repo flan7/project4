@@ -23,16 +23,16 @@ $found = 0;
 while($row = mysqli_fetch_array($result)){
 
     if($row['username']==$username && $row['password']==$password){
-        $found = 1;
-        break;
-    }
+        if ($row['type']=="seller"){
+            header("location: seller.php");
+        }
+        else if ($row['type']=="buyer"){
+            header("location: buyer.php");
+        }
+        else if ($row['type']=="admin"){
+            header("location: admin.php");
+        }
 }
+header("location: register.php");
 
-if ($found == 1){
-    /* $_SESSION["username"] = $username; */
-    header("location: seller.php");
-}
-else{
-    header("location: register.php");
-}
 ?>

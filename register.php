@@ -3,25 +3,21 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Register</h1><br>
+  <div class="form-container">
+    <h1>Register</h1>
 
     <form method="post" action="register_submit.php">
-      <label>Player name</label><input type="text" name="username" required>
-
-      <br>
-
-      <label>Password:</label><input type="text" name="password" required>
-
-      <br>
-      <br>
-
+      <label>Username</label><input type="text" name="username" required>
+      <label>Password</label><input type="password" name="password" required>
+      <label>email</label><input type="text" name="email" required>
+      <label>Buyer</label><input type="radio" name="buyer" value="buyer" checked required>
+      <label>Seller</label><input type="radio" name="seller" value="seller" checked required>
       <button type="submit">Register</button>
     </form>
-
-    <br>
 
     <form method="get" action="login.php">
       <button type="submit">Login page</button>

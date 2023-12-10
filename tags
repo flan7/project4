@@ -10,6 +10,9 @@
 !_TAG_FIELD_DESCRIPTION	typeref	/Type and name of a variable or typedef/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_KIND_DESCRIPTION!CSS	c,class	/classes/
+!_TAG_KIND_DESCRIPTION!CSS	i,id	/identities/
+!_TAG_KIND_DESCRIPTION!CSS	s,selector	/selectors/
 !_TAG_KIND_DESCRIPTION!HTML	C,stylesheet	/stylesheets/
 !_TAG_KIND_DESCRIPTION!HTML	I,id	/identifiers/
 !_TAG_KIND_DESCRIPTION!HTML	J,script	/scripts/
@@ -38,6 +41,7 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_OUTPUT_VERSION	0.0	/current.age/
+!_TAG_PARSER_VERSION!CSS	0.0	/current.age/
 !_TAG_PARSER_VERSION!HTML	0.0	/current.age/
 !_TAG_PARSER_VERSION!Markdown	0.0	/current.age/
 !_TAG_PARSER_VERSION!PHP	0.0	/current.age/
@@ -50,7 +54,13 @@
 !_TAG_ROLE_DESCRIPTION!HTML!class	attribute	/assigned as attributes/
 !_TAG_ROLE_DESCRIPTION!HTML!script	extFile	/referenced as external files/
 !_TAG_ROLE_DESCRIPTION!HTML!stylesheet	extFile	/referenced as external files/
-Music Add	index.html	/^  <title>Music Add<\/title>$/;"	j
+.form-container	styles.css	/^  .form-container, .table-container {$/;"	c
+.table-container	styles.css	/^  .form-container, .table-container {$/;"	c
+Innovative Innovations	index.html	/^  <title>Innovative Innovations<\/title>$/;"	j
+body	styles.css	/^body {$/;"	s
+button	styles.css	/^  button {$/;"	s
+button	styles.css	/^  input, button {$/;"	s
+button:hover	styles.css	/^  button:hover {$/;"	s
 conn	createTables.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
 conn	login_submit.php	/^$conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);$/;"	v
 conn	register_submit.php	/^$conn = new mysqli($servername, $username, $password, $dbname);$/;"	v
@@ -63,9 +73,10 @@ dbname	seller_submit.php	/^$dbname = "ssalomon1";$/;"	v
 dbname	showTable.php	/^$dbname = "ssalomon1";$/;"	v
 dbpassword	login_submit.php	/^$dbpassword = "ssalomon1";$/;"	v
 dbusername	login_submit.php	/^$dbusername = "ssalomon1";$/;"	v
-found	login_submit.php	/^        $found = 1;$/;"	v
+form	styles.css	/^  form {$/;"	s
 found	login_submit.php	/^$found = 0;$/;"	v
-newline	register_submit.php	/^  $newline = "\\n".$_POST["username"].",".$_POST["password"];$/;"	v
+input	styles.css	/^  input, button {$/;"	s
+label	styles.css	/^  label {$/;"	s
 password	createTables.php	/^$password = "ssalomon1";$/;"	v
 password	login_submit.php	/^$password = $_POST["password"];$/;"	v
 password	register_submit.php	/^$password = "ssalomon1";$/;"	v
@@ -84,8 +95,16 @@ servername	register_submit.php	/^$servername = "localhost";$/;"	v
 servername	seller_submit.php	/^$servername = "localhost";$/;"	v
 servername	showTable.php	/^$servername = "localhost";$/;"	v
 sql	createTables.php	/^$sql = "CREATE TABLE Music ($/;"	v
-sql	register_submit.php	/^$sql = "INSERT INTO users (username, password) VALUES (\\"".$_POST["username"]."\\", \\"".$_POST/;"	v
+sql	register_submit.php	/^$sql = "INSERT INTO users (username, password, email, type) VALUES (\\"".$_POST["username"]."\\"/;"	v
+sql	register_submit.php	/^$sql = "SELECT * FROM users WHERE username=\\"".$_POST["username"]."\\")";$/;"	v
 sql	seller_submit.php	/^$sql = "INSERT INTO Music (artist, album) VALUES (\\"".$_POST["artist"]."\\", \\"".$_POST["album/;"	v
+table	styles.css	/^  table {$/;"	s
+table	styles.css	/^  table, th, td {$/;"	s
+td	styles.css	/^  table, th, td {$/;"	s
+td	styles.css	/^  th, td {$/;"	s
+th	styles.css	/^  table, th, td {$/;"	s
+th	styles.css	/^  th {$/;"	s
+th	styles.css	/^  th, td {$/;"	s
 username	createTables.php	/^$username = "ssalomon1";$/;"	v
 username	login_submit.php	/^$username = $_POST["username"];$/;"	v
 username	register_submit.php	/^$username = "ssalomon1";$/;"	v

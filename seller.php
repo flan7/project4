@@ -2,20 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Add Artist</title>
+    <title>Seller Panel</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form method="post" action="addArtist_submit.php">
-      Add Artist:
-      <label>Artist:</label><input type="text" name="artist" required>
-
-      <br>
-      <label>Album:</label><input type="text" name="album" required>
-
-      <button type="submit" name="add">Add</button>
-    </form>
-      
-    <br>
-    <br>
+    <div class="form-container">
+        <form method="post" action="seller_submit.php">
+          <h1>Add item</h1>
+          <label>item:</label><input type="text" name="item" required>
+          <label>price:</label><input type="text" name="price" required>
+          <button type="submit" name="add">Add</button>
+        </form>
+    </div>
 </body>
 </html>
